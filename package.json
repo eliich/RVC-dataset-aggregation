@@ -10,5 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "playwright": "^1.41.2",
+    "puppeteer": "^22.2.0"
+  }
 }

@@ -8,11 +8,10 @@ const [,, command, ...args] = process.argv;
 
 try {
   if (command === 'scrape') {
-    // Assuming the first argument is the username and the rest are additional parameters
     const username = args[0];
     const additionalParams = args.slice(1);
-    if (!username) {
-      throw new Error('Username is required for scraping.');
+    if (!username || !username.startsWith('@')) {
+      throw new Error('Username must be provided in the format @username.');
     }
     scraper.scrape(username, additionalParams);
   } else if (command === 'fix-cookie') {
