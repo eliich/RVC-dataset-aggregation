@@ -7,12 +7,16 @@
     "rvc-dataset-aggregation": "./bin/rvc-dataset-aggregation.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-bot-detection": "node src/testPuppBot.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "playwright": "^1.41.2",
-    "puppeteer": "^22.2.0"
+    "puppeteer": "^22.2.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-recaptcha": "^3.6.8",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
   }
 }
